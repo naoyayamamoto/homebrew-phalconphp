@@ -13,14 +13,14 @@ class PhpMetaRequirement < HomebrewPhpRequirement
     default_formula "php55"
   elsif Formula["php56"].linked_keg.exist? && $supported_php_versions.include?('php56')
     default_formula "php56"
-  elsif Formula["php70"].linked_keg.exist? && $supported_php_versions.include?('php70')
-    default_formula "php70"
-  elsif Formula["php71"].linked_keg.exist? && $supported_php_versions.include?('php71')
-    default_formula "php71"
-  elsif Formula["php72"].linked_keg.exist? && $supported_php_versions.include?('php72')
-    default_formula "php72"
-  elsif Formula["php73"].linked_keg.exist? && $supported_php_versions.include?('php73')
-    default_formula "php73"
+  elsif Formula["php@7.0"].linked_keg.exist? && $supported_php_versions.include?('php@7.0')
+    default_formula "php@7.0"
+  elsif Formula["php@7.1"].linked_keg.exist? && $supported_php_versions.include?('php@7.1')
+    default_formula "php@7.1"
+  elsif Formula["php@7.2"].linked_keg.exist? && $supported_php_versions.include?('php@7.2')
+    default_formula "php@7.2"
+  elsif Formula["php@7.3"].linked_keg.exist? && $supported_php_versions.include?('php@7.3')
+    default_formula "php@7.3"
   else
     default_formula $supported_php_versions.last
   end
