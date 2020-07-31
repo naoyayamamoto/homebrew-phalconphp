@@ -19,6 +19,8 @@ class PhpMetaRequirement < HomebrewPhpRequirement
     default_formula "php71"
   elsif Formula["php72"].linked_keg.exist? && $supported_php_versions.include?('php72')
     default_formula "php72"
+  elsif Formula["php73"].linked_keg.exist? && $supported_php_versions.include?('php73')
+    default_formula "php73"
   else
     default_formula $supported_php_versions.last
   end
